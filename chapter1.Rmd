@@ -10,7 +10,7 @@ attachments :
 $a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a** түүврийн хувьд абсалют давтамжаар нь **m=10** хэсэг ангилсан статистикийн цувааг зохио.
 
 *** =instructions
-- ls(), mydata, head(mydata), tail(mydata), dim(mydata) г.м өгөгдлийг үзэх, 
+- `ls()`, `mydata`, `head(mydata)`, `tail(mydata)`, `dim(mydata)` г.м өгөгдлийг үзэх, 
 - **a, m** -д утга олгох,
 - **amin, amax, h** -г бодож олох,
 - **xr, xc** -г бодож олох,
@@ -18,8 +18,8 @@ $a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a**
 - **sseries** статистик цувааг зохиох.
 
 *** =hint
-amin <- min(a)
-for(i in 1:200) { frq[round(a[i,1]/m),1] <- frq[round(a[i,1]/m),1] + 1 }
+`amin <- min(a)`
+`for(i in 1:200) { frq[round(a[i,1]/m),1] <- frq[round(a[i,1]/m),1] + 1 }`
 
 *** =pre_exercise_code
 ```{r}
@@ -35,11 +35,7 @@ movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduct
 
 *** =sct
 ```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
-msg_bad <- "That is not correct!"
-msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+#no SCT
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:ed477d3f70
