@@ -46,7 +46,10 @@ movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduct
 *** =sample_code
 ```{r}
 # Өгөгдлийг үзэх,
-ls(), mydata, head(mydata), tail(mydata), dim(mydata)
+ls();  mydata 
+head(mydata)
+tail(mydata) 
+dim(mydata)
 
 # Анхны утга олгох,
 a <- mydata[2]; m <- 10
