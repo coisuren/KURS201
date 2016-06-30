@@ -4,7 +4,7 @@ description : Бие даалтын бодлого
 attachments :
   slides_link : https://s3.amazonaws.com/smt201-16/san3.pdf
 
---- type:NormalExercise lang:r xp:100 skills:1
+--- type:NormalExercise lang:r xp:100 skills:1 key:0f9f5045dd
 ## 15.1 Бодлого
 
 $a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a** түүврийн хувьд абсалют давтамжаар нь 10 хэсэг ангилан статистикын цувааг зохио.
