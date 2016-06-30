@@ -10,16 +10,25 @@ attachments :
 $a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a** түүврийн хувьд абсалют давтамжаар нь **m=10** хэсэг ангилсан статистикийн цувааг зохио.
 
 *** =instructions
-- `ls()`, `mydata`, `head(mydata)`, `tail(mydata)`, `dim(mydata)` г.м өгөгдлийг үзэх, 
-- **a, m** -д утга олгох,
-- **amin, amax, h** -г бодож олох,
-- **xr, xc** -г бодож олох,
-- **frq** -г бодож олох,
-- **sseries** статистик цувааг зохиох.
+- Өгөгдлийг үзэх,
+- `ls()`, `mydata`, `head(mydata)`, `tail(mydata)`, `dim(mydata)`
+- Анхны утга олгох,
+- `a <- mydata[2]`, `m <- 10`
+- ХИУ, ХБУ, алхамыг бодох,
+- `amin <- min(a)`, `h <- (amax -amin)/m`
+- Баруун үзүүрийн цэг олох,
+- `xr < matrix(0,m,1)`
+- `for(i in 1:m){ xr[i,1] <- amin + i*h }`
+- Төвийн цэгийг олох,
+- `xc <- xr - h/2`
+- Давтамжийг бодож олох,
+- `frq <- matrix(0,m,1)`, `frq[1,1] <- 1`
+- `for(i in 1:m){ frq[round(a(i,1)/m),1] <- frq[round(a(i,1)/m),1] +1 }`
+- Статистик цувааг зохиох,
+- `sseries <- cbind(xc,frq)`
 
 *** =hint
 
-`amin <- min(a)`
 `for(i in 1:200) { frq[round(a[i,1]/m),1] <- frq[round(a[i,1]/m),1] + 1 }`
 
 *** =pre_exercise_code
@@ -33,6 +42,32 @@ movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduct
 #library(ggplot2)
 #ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
 ```
+
+*** =sample_code
+```{r}
+# Өгөгдлийг үзэх,
+ls(), mydata, head(mydata), tail(mydata), dim(mydata)
+
+# Анхны утга олгох,
+a <- mydata[2], m <- 10
+
+# ХИУ, ХБУ, алхамыг бодох,
+amin <- min(a), h <- (amax -amin)/m
+
+# Баруун үзүүрийн цэг олох,
+xr < matrix(0,m,1)
+for(i in 1:m){ xr[i,1] <- amin + i*h }
+
+# Төвийн цэгийг олох,
+xc <- xr - h/2
+#Давтамжийг бодож олох,
+frq <- matrix(0,m,1), frq[1,1] <- 1
+for(i in 1:m){ frq[round(a(i,1)/m),1] <- frq[round(a(i,1)/m),1] +1 }
+
+#Статистик цувааг зохиох,
+sseries <- cbind(xc,frq)
+```
+
 
 *** =sct
 ```{r}
