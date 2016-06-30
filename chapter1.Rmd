@@ -49,10 +49,10 @@ movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduct
 ls(), mydata, head(mydata), tail(mydata), dim(mydata)
 
 # Анхны утга олгох,
-a <- mydata[2], m <- 10
+a <- mydata[2]; m <- 10
 
 # ХИУ, ХБУ, алхамыг бодох,
-amin <- min(a), h <- (amax -amin)/m
+amin <- min(a); h <- (amax -amin)/m
 
 # Баруун үзүүрийн цэг олох,
 xr < matrix(0,m,1)
@@ -61,7 +61,7 @@ for(i in 1:m){ xr[i,1] <- amin + i*h }
 # Төвийн цэгийг олох,
 xc <- xr - h/2
 #Давтамжийг бодож олох,
-frq <- matrix(0,m,1), frq[1,1] <- 1
+frq <- matrix(0,m,1); frq[1,1] <- 1
 for(i in 1:m){ frq[round(a(i,1)/m),1] <- frq[round(a(i,1)/m),1] +1 }
 
 #Статистик цувааг зохиох,
