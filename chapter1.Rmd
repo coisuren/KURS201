@@ -103,7 +103,8 @@ load(url("http://s3.amazonaws.com/smt201-16/chap1.Rdata"))
 ls()
 
 # Өгөгдлийн бүтцийг харах
-xc;  head(xc)
+xc
+head(xc)
 
 # Полигон зурах
 plot(xc,frq,"s")
@@ -115,7 +116,8 @@ plot(xc,frq,"s")
 ls()
 
 # Өгөгдлийн бүтцийг харах
-xc;  head(xc)
+xc
+head(xc)
 
 # Полигон зурах
 plot(xc,frq,"s")
@@ -127,7 +129,7 @@ plot(xc,frq,"s")
 --- type:NormalExercise lang:r xp:100 skills:1 key:30513e4c08
 ## 15.3 Бодлого
 
-Ангилсан статистик цувааны харьцангуй давтамжийн гистограмыг байгуул.
+Ангилсан статистик цувааны `rfrq` - харьцангуй давтамжийн гистограмыг байгуул.
 
 `xc`, `frq` - зэрэг нь ажлын талбарт бэлэн байрлаж байгаа.
 
@@ -152,7 +154,8 @@ load(url("http://s3.amazonaws.com/smt201-16/chap1.Rdata"))
 ls()
 
 # Өгөгдлийн бүтцийг харах
-xc;  head(xc)
+xc  
+head(xc)
 
 # Гистограм зурах
 hist(xc,rfrq)
@@ -164,7 +167,8 @@ hist(xc,rfrq)
 ls()
 
 # Өгөгдлийн бүтцийг харах
-rfrq <- frq/200;  head(rfrq)
+rfrq <- frq/200
+tail(rfrq)
 
 # Гистограм зурах
 hist(xc,rfrq)
@@ -176,7 +180,7 @@ hist(xc,rfrq)
 --- type:NormalExercise lang:r xp:100 skills:1 key:059dfa711a
 ## 15.4 Бодлого
 
-Түүврийн дундажийг ол.
+**a** - түүврийн дундажийг ол.
 
 `mydata`, `a` - зэрэг нь ажлын талбарт бэлэн байрлаж байгаа.
 
@@ -223,7 +227,7 @@ mean(a$V2)
 --- type:NormalExercise lang:r xp:100 skills:1 key:a6e85e5aed
 ## 15.5 Бодлого
 
-Түүврийн $\sigma$ - дундаж квадрат хазайлт , $D = \sigma^2$ - дисперсийг ол.
+**a** - түүврийн $\sigma$ - дундаж квадрат хазайлт , $D = \sigma^2$ - дисперсийг ол.
 
 `mydata`, `a` - түүвэр зэрэг нь ажлын талбарт бэлэн байрлана.
 
