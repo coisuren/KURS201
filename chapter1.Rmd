@@ -11,11 +11,14 @@ $a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a**
 
 *** =instructions
 - Өгөгдлийг үзэх,
-- `ls()`, `mydata`, `head(mydata)`, `tail(mydata)`, `dim(mydata)`
+- `ls()`, `mydata`, `head(mydata)`, 
+- `tail(mydata)`, `dim(mydata)`
 - Анхны утга олгох,
-- `a <- mydata[2]`, `m <- 10`
+- `a <- mydata[2]`, 
+- `m <- 10`
 - ХИУ, ХБУ, алхамыг бодох,
-- `amin <- min(a)`, `h <- (amax -amin)/m`
+- `amin <- min(a)`, 
+- `h <- (amax -amin)/m`
 
 *** =hint
 
@@ -41,8 +44,9 @@ dim(mydata)
 a <- mydata[2]; m <- 10
 
 # ХБУ, ХИУ, алхамыг бодох,
-amin <- min(a); h <- (amax -amin)/m
-
+amin <- min(a)
+amax <- max(a)
+h <- (amax -amin)/m
 ```
 
 *** =sct
@@ -153,7 +157,7 @@ sseries <- cbind(xc,frq)
 *** =pre_exercise_code
 ```{r}
 # хуваалтын дундаж, давтамжийг хадгалсан файл
-load(url("http://s3.amazonaws.com/smt201-16/chap1.Rdata"))
+load(url("http://s3.amazonaws.com/smt201-16/chap1_4.Rdata"))
 ```
 
 *** =sample_code
