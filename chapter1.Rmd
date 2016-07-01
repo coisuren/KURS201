@@ -256,7 +256,7 @@ xc
 head(xc)
 
 # Гистограм зурах
-hist(xc,rfrq)
+plot(xc,rfrq,"h")
 ```
 
 *** =solution
@@ -269,7 +269,7 @@ rfrq <- frq/200
 tail(rfrq)
 
 # Гистограм зурах
-hist(xc,rfrq)
+plot(xc,rfrq,"h")
 ```
 
 *** =sct
