@@ -4,7 +4,7 @@ description : Бие даалтын бодлого
 attachments :
   slides_link : https://s3.amazonaws.com/smt201-16/san3.pdf
 
---- type:NormalExercise lang:r xp:100 skills:1 key:0f9f5045dd
+--- type:NormalExercise lang:r xp:100 skills:1
 ## 15.1 Бодлого
 
 $a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a** түүврийн хувьд абсалют давтамжаар нь **m=10** хэсэг ангилсан статистикийн цувааг зохио.
@@ -16,20 +16,10 @@ $a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a**
 - `a <- mydata[2]`, `m <- 10`
 - ХИУ, ХБУ, алхамыг бодох,
 - `amin <- min(a)`, `h <- (amax -amin)/m`
-- Баруун үзүүрийн цэг олох,
-- `xr < matrix(0,m,1)`
-- `for(i in 1:m){ xr[i,1] <- amin + i*h }`
-- Төвийн цэгийг олох,
-- `xc <- xr - h/2`
-- Давтамжийг бодож олох,
-- `frq <- matrix(0,m,1)`, `frq[1,1] <- 1`
-- `for(i in 1:200){ frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] +1 }`
-- Статистик цувааг зохиох,
-- `sseries <- cbind(xc,frq)`
 
 *** =hint
 
-`for(i in 1:200) { frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] + 1 }`
+#`for(i in 1:200) { frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] + 1 }`
 
 *** =pre_exercise_code
 ```{r}
@@ -53,6 +43,41 @@ a <- mydata[2]; m <- 10
 # ХБУ, ХИУ, алхамыг бодох,
 amin <- min(a); h <- (amax -amin)/m
 
+```
+
+*** =sct
+```{r}
+#no SCT
+```
+
+--- type:NormalExercise lang:r xp:100 skills:1 
+## 15.2 Бодлого
+
+$a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a** түүврийн хувьд абсалют давтамжаар нь **m=10** хэсэг ангилсан статистикийн цувааг зохио.
+
+*** =instructions
+
+- Баруун үзүүрийн цэг олох,
+- `xr < matrix(0,m,1)`
+- `for(i in 1:m){ xr[i,1] <- amin + i*h }`
+- Төвийн цэгийг олох,
+- `xc <- xr - h/2`
+
+*** =hint
+
+#`for(i in 1:200) { frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] + 1 }`
+
+*** =pre_exercise_code
+```{r}
+# Хэрэглэгчийн өгөгдөлүүд
+# Эдгээр өгөгдөлийг дуудаж ашиглана.
+mydata <- read.table("http://s3.amazonaws.com/smt201-16/mydata2.txt")
+mydata_csv <- read.csv("http://s3.amazonaws.com/smt201-16/mydata2.csv")
+```
+
+*** =sample_code
+```{r}
+
 # Хуваалтын баруун үзүүрийн цэг олох,
 xr < matrix(0,m,1)
 for(i in 1:m){ xr[i,1] <- amin + i*h }
@@ -60,6 +85,39 @@ for(i in 1:m){ xr[i,1] <- amin + i*h }
 # Хуваалтын төвийн цэгийг олох,
 xc <- xr - h/2
 
+```
+
+*** =sct
+```{r}
+#no SCT
+```
+
+--- type:NormalExercise lang:r xp:100 skills:1
+## 15.3 Бодлого
+
+$a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a** түүврийн хувьд абсалют давтамжаар нь **m=10** хэсэг ангилсан статистикийн цувааг зохио.
+
+*** =instructions
+- Давтамжийг бодож олох,
+- `frq <- matrix(0,m,1)`, `frq[1,1] <- 1`
+- `for(i in 1:200){ frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] +1 }`
+- Статистик цувааг зохиох,
+- `sseries <- cbind(xc,frq)`
+
+*** =hint
+
+`for(i in 1:200) { frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] + 1 }`
+
+*** =pre_exercise_code
+```{r}
+# Хэрэглэгчийн өгөгдөлүүд
+# Эдгээр өгөгдөлийг дуудаж ашиглана.
+mydata <- read.table("http://s3.amazonaws.com/smt201-16/mydata2.txt")
+mydata_csv <- read.csv("http://s3.amazonaws.com/smt201-16/mydata2.csv")
+```
+
+*** =sample_code
+```{r}
 # Давтамжийн эхний утгыг бодох,
 frq <- matrix(0,m,1); frq[1,1] <- 1
 
@@ -75,8 +133,9 @@ sseries <- cbind(xc,frq)
 #no SCT
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:1d1f57700e
-## 15.2 Бодлого
+
+--- type:NormalExercise lang:r xp:100 skills:1
+## 15.4 Бодлого
 
 Ангилсан статистик цувааны полигоныг байгуул.
 
@@ -126,8 +185,8 @@ plot(xc,frq,"s")
 *** =sct
 # no code
 
---- type:NormalExercise lang:r xp:100 skills:1 key:30513e4c08
-## 15.3 Бодлого
+--- type:NormalExercise lang:r xp:100 skills:1
+## 15.5 Бодлого
 
 Ангилсан статистик цувааны `rfrq` - харьцангуй давтамжийн гистограмыг байгуул.
 
@@ -177,8 +236,8 @@ hist(xc,rfrq)
 *** =sct
 # no code
 
---- type:NormalExercise lang:r xp:100 skills:1 key:059dfa711a
-## 15.4 Бодлого
+--- type:NormalExercise lang:r xp:100 skills:1
+## 15.6 Бодлого
 
 **a** - түүврийн дундажийг ол.
 
@@ -230,8 +289,8 @@ mean(a$V2)
 *** =sct
 # no code
 
---- type:NormalExercise lang:r xp:100 skills:1 key:a6e85e5aed
-## 15.5 Бодлого
+--- type:NormalExercise lang:r xp:100 skills:1
+## 15.7 Бодлого
 
 **a** - түүврийн $\sigma$ - дундаж квадрат хазайлт , $D = \sigma^2$ - дисперсийг ол.
 
