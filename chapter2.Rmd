@@ -7,7 +7,7 @@ attachments :
 --- type:NormalExercise lang:r xp:100 skills:1 key:0ed836297d
 
 ## 16 Бодлого
-$p(k;n,p) = \sqrt{2} \cdot k$ , n=10  биномт тархалтын **p** -параметрыг 
+$p(k;n,p) = \sum_1^5 C_1^9 \cdot k$ , n=10  биномт тархалтын **p** -параметрыг 
 туршилтын момент $ M_1=\overline{x} $ =6.8 -ээр моментын арга хэрэглэн ол.
 
 *** =instructions
