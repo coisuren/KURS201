@@ -78,11 +78,11 @@ p <- 6.8/10
 
 *** =instructions
 
-- x, y -ын дундаж
+x, y -ын дундаж:
 - Mx <- mean(x)
 - My <- mean(y)
 
-- xy, $x^2$ -ын дундаж
+xy, $x^2$ -ын дундаж:
 - M(xy) <- mean(x*y)
 - M(xx) <- mean(x**2)
 
