@@ -103,31 +103,30 @@ load(url("http://s3.amazonaws.com/smt201-16/chap1.Rdata"))
 #library(MindOnStats)
 #data(Movies)
 #movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"),c("Genre", "Rating", "Run")]
-
 ```
 
 *** =sample_code
 ```{r}
 # Ажлын талбарыг шалгах
-`ls()`
+ls()
 
 # Өгөгдлийн бүтцийг харах
-`xc`;  `head(xc)`
+xc;  head(xc)
 
 # Полигон зурах
-`plot(xc,frq,"s")`
+plot(xc,frq,"s")
 ```
 
 *** =solution
 ```{r}
 # Ажлын талбарыг шалгах
-`ls()`
+ls()
 
 # Өгөгдлийн бүтцийг харах
-`xc`;  `head(xc)`
+xc;  head(xc)
 
 # Полигон зурах
-`plot(xc,frq,"s")`
+plot(xc,frq,"s")
 ```
 
 *** =sct
