@@ -12,6 +12,6 @@ xc <- xr - h/2
 frq <- matrix(0,m,1); frq[1,1] <- 1
 for(i in 1:m){ frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] +1 }
 sseries <- cbind(xc,frq)
-save(xc,frq, file="chap1.Rdata")
-rm(a,amin,amax,m,h,xr,xc)
+save(xc,frq, file="chap1_4.Rdata")
+rm(a,amin,amax,m,h,xr)
 
