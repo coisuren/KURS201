@@ -4,7 +4,7 @@ description : Бие даалтын бодлого
 attachments :
   slides_link : https://s3.amazonaws.com/smt201-16/san3.pdf
 
---- type:NormalExercise lang:r xp:100 skills:1
+--- type:NormalExercise lang:r xp:100 skills:1 key:0ed836297d
 
 ## 16 Бодлого
 
