@@ -8,18 +8,18 @@ attachments :
 
 ## 16 Бодлого
 
-![equation](http://s3.amazonaws.com/smt201-16/render16_1)  n=10  биномт тархалтын **p** -параметрыг 
+![equation](https://s3.amazonaws.com/smt201-16/render16_1)  n=10  биномт тархалтын **p** -параметрыг 
 туршилтын момент $ M_1 = \overline{x} $ = 6.8  -ээр моментын арга хэрэглэн ол.
 
 *** =instructions
 
 - Биномт тархалтын хувьд I эрэмбийн төвийн момент 
-- $ M_{1}$ = ![equation](http://s3.amazonaws.com/smt201-16/render16_1) = $n \cdot p$  тул
+- $ M_{1}$ = ![equation](https://s3.amazonaws.com/smt201-16/render16_1) = $n \cdot p$  тул
 - $ 10 \cdot p = 6.8 \Rightarrow p=0.68 $ гэж параметр олдоно.
 
 *** =hint
 # Биномт тархалтын хувьд дараах томъёог ашигла.
-- $ M_{1}$ = ![equation](http://s3.amazonaws.com/smt201-16/render16_1) = $n \cdot p$
+- $ M_{1}$ = ![equation](https://s3.amazonaws.com/smt201-16/render16_1) = $n \cdot p$
 
 *** =pre_exercise_code
 ```{r}
@@ -29,7 +29,7 @@ attachments :
 *** =sample_code
 ```{r}
 # Биномт тархалтын хувьд I эрэмбийн төвийн момент
-$ M_{1}$ = ![equation](http://s3.amazonaws.com/smt201-16/render16_1) = $n \cdot p$
+$ M_{1}$ = ![equation](https://s3.amazonaws.com/smt201-16/render16_1) = $n \cdot p$
 
 # **p** параметрын утгыг олвол,
 $10p=6.8 \Rigtharrow p=0.68.$
