@@ -64,7 +64,7 @@ p <- 6.8/10
 ```{r}
 #no SCT
 ```
---- type:NormalExercise lang:r xp:100 skills:1 key:922de32376
+--- type:NormalExercise lang:r xp:100 skills:1
 
 ## 17 Бодлого
 
@@ -88,7 +88,7 @@ xy, $x^2$ -ын дундаж:
 - `M(xy) <- mean(x*y)`
 - `M(xx) <- mean(x**2)`
 
-# коеффициентуудыг олвол,
+коеффициентуудыг олвол,
 - $a1 = \frac{M(xy)-MxMy}{Mx^2-(Mx)^2}$
 - $a2 = n \frac{Mx^2My - Mx M(xy)}{Mx^2-(Mx)^2}$
 - $ y = a1x +a2$ гэж олдоно.
