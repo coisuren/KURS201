@@ -74,7 +74,7 @@ p <- 6.8/10
 
 - $ a1 = \frac{M(xy)-MxMy}{Mx^2-(Mx)^2}$
 - $ a2 = n \frac{Mx^2My - Mx M(xy)}{Mx^2-(Mx)^2}$
-- $ y = a1 \cdot x +a2$ гэж олдоно.
+- $ y = a1 \cdot x + a2$ гэж олдоно.
 
 *** =instructions
 
@@ -92,7 +92,7 @@ xy, $x^2$ -ын дундаж:
 
 - $a1 = \frac{M(xy)-MxMy}{Mx^2-(Mx)^2}$
 - $a2 = n \frac{Mx^2My - Mx M(xy)}{Mx^2-(Mx)^2}$
-- $ y = a1x +a2$ гэж олдоно.
+- $ y = a1x + a2$ гэж олдоно.
 
 *** =hint
 # no hint
@@ -117,7 +117,7 @@ Mxx <- mean(x**2)
 # коеффициентуудыг олвол,
 a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
 a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
-y_lin  <- a1*x +a2 гэж олдоно.
+y_lin  <- a1*x + a2 гэж олдоно.
 plot(x,y,type="l",col=2)
 lines(x,y_lin,col=3)
 ```
@@ -136,7 +136,7 @@ Mxx <- mean(x**2)
 # коеффициентуудыг олвол,
 a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
 a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
-y_lin  <- a1*x +a2 гэж олдоно.
+y_lin  <- a1*x + a2 гэж олдоно.
 plot(x,y,type="l",col=2)
 lines(x,y_lin,col=3)
 ```
