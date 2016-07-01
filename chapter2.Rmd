@@ -77,11 +77,12 @@ p <- 6.8/10
 - $ y = a1x +a2$ гэж олдоно.
 
 *** =instructions
-# x, y -ын дундаж
+
+- x, y -ын дундаж
 - Mx <- mean(x)
 - My <- mean(y)
 
-# xy, $x^2$ -ын дундаж
+- xy, $x^2$ -ын дундаж
 - M(xy) <- mean(x*y)
 - M(xx) <- mean(x**2)
 
@@ -105,7 +106,7 @@ n <- 9
 # x, y -ын дундаж
 Mx <- mean(x)
 My <- mean(y)
-# xy, $x^2$ -ын дундаж
+# xy, x^2 -ын дундаж
 Mxy <- mean(x*y)
 Mxx <- mean(x**2)
 
