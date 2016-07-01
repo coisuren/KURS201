@@ -72,33 +72,31 @@ for(i in 1:m){ frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] +1 }
 
 # Статистик цувааг зохиох,
 sseries <- cbind(xc,frq)
+# Хадгалах 
+save(sseries,"/datasets/chapter1.RData")
 
-# График зурах
-plot(xc, frq, "s")
 ```
-
 
 *** =sct
 ```{r}
 #no SCT
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:ed477d3f70
-## More movies
+--- type:NormalExercise lang:r xp:100 skills:1 
+## 15.2 Бодлого
 
-In the previous exercise, you saw a dataset about movies. In this exercise, we'll have a look at yet another dataset about movies!
+Ангилсан статистик цувааны полигоныг байгуул.
 
-A dataset with a selection of movies, `movie_selection`, is available in the workspace.
+`xc`, `frq` - зэрэг нь ажлын талбарт бэлэн байрлаж байгаа.
 
 *** =instructions
-- Check out the structure of `movie_selection`.
-- Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
-- Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
+- `xc` хуваалтын дундаж утгыг шалга
+- `head(xc)` гэж эхний 6 элементийг дуудаж үз.
+- `plot(xc,frq,"s")` гэвэл давтамжийн полигон байгуулагдана.
 
 *** =hint
-- Use `str()` for the first instruction.
-- For the second instruction, you should use `...[movie_selection$Rating >= 5, ]`.
-- For the plot, use `plot(x = ..., y = ..., col = ...)`.
+- `plot()` буюу зурах функцийг ашиглан полигоныг зурна уу!
+- Функцийг ашиглах заавар `plot(x = ..., y = ..., col = ...)`.
 
 *** =pre_exercise_code
 ```{r}
