@@ -75,7 +75,7 @@ sseries <- cbind(xc,frq)
 #no SCT
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:1d1f57700e
+--- type:NormalExercise lang:r xp:100 skills:1
 ## 15.2 Бодлого
 
 Ангилсан статистик цувааны полигоныг байгуул.
@@ -126,7 +126,7 @@ plot(xc,frq,"s")
 *** =sct
 # no code
 
---- type:NormalExercise lang:r xp:100 skills:1 key:30513e4c08
+--- type:NormalExercise lang:r xp:100 skills:1
 ## 15.3 Бодлого
 
 Ангилсан статистик цувааны `rfrq` - харьцангуй давтамжийн гистограмыг байгуул.
@@ -177,7 +177,7 @@ hist(xc,rfrq)
 *** =sct
 # no code
 
---- type:NormalExercise lang:r xp:100 skills:1 key:059dfa711a
+--- type:NormalExercise lang:r xp:100 skills:1
 ## 15.4 Бодлого
 
 **a** - түүврийн дундажийг ол.
@@ -224,7 +224,7 @@ mean(a$V2)
 *** =sct
 # no code
 
---- type:NormalExercise lang:r xp:100 skills:1 key:a6e85e5aed
+--- type:NormalExercise lang:r xp:100 skills:1
 ## 15.5 Бодлого
 
 **a** - түүврийн $\sigma$ - дундаж квадрат хазайлт , $D = \sigma^2$ - дисперсийг ол.
