@@ -80,7 +80,7 @@ sseries <- cbind(xc,frq)
 #no SCT
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1  key:1d1f57700e
+--- type:NormalExercise lang:r xp:100 skills:1
 ## 15.2 Бодлого
 
 Ангилсан статистик цувааны полигоныг байгуул.
