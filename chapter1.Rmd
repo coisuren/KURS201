@@ -49,6 +49,23 @@ amax <- max(a)
 h <- (amax -amin)/m
 ```
 
+*** =solution
+```{r}
+# Өгөгдлийг унших, эхнээс сүүлчээс нь үзэх, хэмжээсийг харах 
+ls();  mydata 
+head(mydata)
+tail(mydata) 
+dim(mydata)
+
+# Анхны утга олгох,
+a <- mydata[2]; m <- 10
+
+# ХБУ, ХИУ, алхамыг бодох,
+amin <- min(a)
+amax <- max(a)
+h <- (amax -amin)/m
+```
+
 *** =sct
 ```{r}
 #no SCT
@@ -81,14 +98,22 @@ mydata <- read.table("http://s3.amazonaws.com/smt201-16/mydata2.txt")
 
 *** =sample_code
 ```{r}
-
 # Хуваалтын баруун үзүүрийн цэг олох,
 xr < matrix(0,m,1)
 for(i in 1:m){ xr[i,1] <- amin + i*h }
 
 # Хуваалтын төвийн цэгийг олох,
 xc <- xr - h/2
+```
 
+*** =solution
+```{r}
+# Хуваалтын баруун үзүүрийн цэг олох,
+xr < matrix(0,m,1)
+for(i in 1:m){ xr[i,1] <- amin + i*h }
+
+# Хуваалтын төвийн цэгийг олох,
+xc <- xr - h/2
 ```
 
 *** =sct
@@ -131,6 +156,17 @@ for(i in 1:m){ frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] +1 }
 sseries <- cbind(xc,frq)
 ```
 
+*** =solution
+```{r}
+# Давтамжийн эхний утгыг бодох,
+frq <- matrix(0,m,1); frq[1,1] <- 1
+
+# Давтамжийг хэсэг тус бүр дээр бодох
+for(i in 1:m){ frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] +1 }
+
+# Статистик цувааг зохиох,
+sseries <- cbind(xc,frq)
+```
 *** =sct
 ```{r}
 #no SCT
