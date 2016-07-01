@@ -172,3 +172,50 @@ hist(xc,rfrq)
 
 *** =sct
 # no code
+
+--- type:NormalExercise lang:r xp:100 skills:1
+## 15.4 Бодлого
+
+Түүврийн дундажийг ол.
+
+`mydata`, `a` - зэрэг нь ажлын талбарт бэлэн байрлаж байгаа.
+
+*** =instructions
+- `mean(x)` түүврийн дундажийг олох
+
+*** =hint
+- `mean(a$V2)`  түүврийн дундажийг олох.
+
+*** =pre_exercise_code
+```{r}
+# **a**  түүврийн утгыг хадгалсан файл
+mydata <- read.table("http://s3.amazonaws.com/smt201-16/mydata2.txt")
+a <- mydata[2] 
+```
+
+*** =sample_code
+```{r}
+# Ажлын талбарыг шалгах
+ls()
+
+# Өгөгдлийн бүтцийг харах
+a;  head(a); a$V2; names(a)
+
+# Дундажийг олох
+mean(a$V2)
+```
+
+*** =solution
+```{r}
+# Ажлын талбарыг шалгах
+ls()
+
+# Өгөгдлийн бүтцийг харах
+a;  head(a); a$V2; names(a)
+
+# Дундажийг олох
+mean(a$V2)
+```
+
+*** =sct
+# no code
