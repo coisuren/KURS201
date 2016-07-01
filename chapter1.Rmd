@@ -220,7 +220,7 @@ mean(a$V2)
 *** =sct
 # no code
 
---- type:NormalExercise lang:r xp:100 skills:1
+--- type:NormalExercise lang:r xp:100 skills:1 key:a6e85e5aed
 ## 15.5 Бодлого
 
 Түүврийн $\sigma$ - дундаж квадрат хазайлт , $D = \sigma^2$ - дисперсийг ол.
