@@ -99,7 +99,7 @@ sseries <- cbind(xc,frq)
 *** =pre_exercise_code
 ```{r}
 # You can also prepare your dataset in a specific way in the pre exercise code
-load(url("http://s3.amazonaws.com/smt201-16/chapter1.R"))
+load(url("http://s3.amazonaws.com/smt201-16/chap1.RData"))
 library(MindOnStats)
 data(Movies)
 movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"),c("Genre", "Rating", "Run")]
