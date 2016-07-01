@@ -1,6 +1,6 @@
 ---
 title       : SMT201
-description : Бие даалтын бодлого
+description : Бие даалтын бодлого 16
 attachments :
   slides_link : https://s3.amazonaws.com/smt201-16/san3.pdf
 
@@ -8,8 +8,8 @@ attachments :
 
 ## 16 Бодлого
 
-$$ p(k;n,p) = C_n^k \cdot p^k \cdot q^{n-k}, n=10 $$ биномт тархалтын **p** -параметрыг 
-туршилтын момент $ M_1=\overline{x}=6.8 $ -ээр моментын арга хэрэглэн ол.
+p(k;n,p) = $C_n^k \cdot p^k \cdot q^{n-k}$ , n=10  биномт тархалтын **p** -параметрыг 
+туршилтын момент $ M_1=\overline{x}$ =6.8 -ээр моментын арга хэрэглэн ол.
 
 *** =instructions
 
