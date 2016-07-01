@@ -74,7 +74,7 @@ p <- 6.8/10
 
 - $ a1 = \frac{M(xy)-MxMy}{Mx^2-(Mx)^2}$
 - $ a2 = n \frac{Mx^2My - Mx M(xy)}{Mx^2-(Mx)^2}$
-- $ y = a1x +a2$ гэж олдоно.
+- $ y = a1 \cdot x +a2$ гэж олдоно.
 
 *** =instructions
 
