@@ -5,3 +5,7 @@ author_bio       : coisuren is an awesome DataCamp course creator.<br>You can sa
 university       : DataCamp
 difficulty_level : 2
 time_needed      : 1 hour
+chapters:
+  chapter1.Rmd: 1720
+  chapter2.Rmd: 1721
+  chapter3.Rmd: 1722
