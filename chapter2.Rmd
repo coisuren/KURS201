@@ -104,11 +104,12 @@ n <- 9
 ```
 
 *** =sample_code
+*** =sample_code
 ```{r}
-# x, y -ын дундаж
+# x, y` -ын дундаж
 Mx <- mean(x)
 My <- mean(y)
-# xy, x^2 -ын дундаж
+# xy, $x^2$ -ын дундаж
 Mxy <- mean(x*y)
 Mxx <- mean(x**2)
 
@@ -119,10 +120,11 @@ yl  <- a1x +a2$ гэж олдоно.
 plot(x,y,x,yl)
 ```
 
+
 *** =solution
 
 ```{r}
-# x, y -ын дундаж
+# x, y` -ын дундаж
 Mx <- mean(x)
 My <- mean(y)
 # xy, $x^2$ -ын дундаж
