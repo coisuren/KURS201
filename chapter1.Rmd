@@ -37,10 +37,6 @@ $a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a**
 # Эдгээр өгөгдөлийг дуудаж ашиглана.
 mydata <- read.table("http://s3.amazonaws.com/smt201-16/mydata2.txt")
 mydata_csv <- read.csv("http://s3.amazonaws.com/smt201-16/mydata2.csv")
-movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
-
-#library(ggplot2)
-#ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
 ```
 
 *** =sample_code
@@ -72,7 +68,6 @@ for(i in 1:m){ frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] +1 }
 
 # Статистик цувааг зохиох,
 sseries <- cbind(xc,frq)
-
 ```
 
 *** =sct
@@ -80,7 +75,7 @@ sseries <- cbind(xc,frq)
 #no SCT
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:1d1f57700e
+--- type:NormalExercise lang:r xp:100 skills:1
 ## 15.2 Бодлого
 
 Ангилсан статистик цувааны полигоныг байгуул.
@@ -98,11 +93,8 @@ sseries <- cbind(xc,frq)
 
 *** =pre_exercise_code
 ```{r}
-# You can also prepare your dataset in a specific way in the pre exercise code
+# хуваалтын дундаж, давтамжийг хадгалсан файл
 load(url("http://s3.amazonaws.com/smt201-16/chap1.Rdata"))
-#library(MindOnStats)
-#data(Movies)
-#movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"),c("Genre", "Rating", "Run")]
 ```
 
 *** =sample_code
