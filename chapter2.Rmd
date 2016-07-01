@@ -64,7 +64,7 @@ p <- 6.8/10
 ```{r}
 #no SCT
 ```
---- type:NormalExercise lang:r xp:100 skills:1 key:922de32376
+--- type:NormalExercise lang:r xp:100 skills:1
 
 ## 17 Бодлого
 
@@ -117,7 +117,7 @@ Mxx <- mean(x**2)
 # коеффициентуудыг олвол,
 a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
 a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
-y_lin  <- a1*x + a2  # гэж олдоно.
+y_lin  <- a1*x + a2
 plot(x,y,type="l",col=2)
 lines(x,y_lin,col=3)
 ```
@@ -136,7 +136,7 @@ Mxx <- mean(x**2)
 # коеффициентуудыг олвол,
 a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
 a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
-y_lin  <- a1*x + a2 # гэж олдоно.
+y_lin  <- a1*x + a2
 plot(x,y,type="l",col=2)
 lines(x,y_lin,col=3)
 ```
