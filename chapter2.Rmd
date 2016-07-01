@@ -79,12 +79,14 @@ p <- 6.8/10
 *** =instructions
 
 x, y -ын дундаж:
-- Mx <- mean(x)
-- My <- mean(y)
+
+- `Mx <- mean(x)`
+- `My <- mean(y)`
 
 xy, $x^2$ -ын дундаж:
-- M(xy) <- mean(x*y)
-- M(xx) <- mean(x**2)
+
+- `M(xy) <- mean(x*y)`
+- `M(xx) <- mean(x**2)`
 
 # коеффициентуудыг олвол,
 - $a1 = \frac{M(xy)-MxMy}{Mx^2-(Mx)^2}$
