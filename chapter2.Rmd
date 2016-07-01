@@ -8,7 +8,7 @@ attachments :
 
 ## 16 Бодлого
 
-[equation]!("http://s3.amazonaws.com/smt201-16/render16_1")  n=10  биномт тархалтын **p** -параметрыг 
+![equation](http://s3.amazonaws.com/smt201-16/render16_1)  n=10  биномт тархалтын **p** -параметрыг 
 туршилтын момент $ M_1 = \overline{x} $ = 6.8  -ээр моментын арга хэрэглэн ол.
 
 *** =instructions
