@@ -29,10 +29,11 @@ attachments :
 *** =sample_code
 ```{r}
 # Биномт тархалтын хувьд I эрэмбийн төвийн момент
-![equation](https://s3.amazonaws.com/smt201-16/render16-2.png) = $n \cdot p$
+
 
 # **p** параметрын утгыг олвол,
-$10p=6.8 \Rigtharrow p=0.68.$
+# 10 p = 6.8
+p <- 6.8/10
 
 ```
 
