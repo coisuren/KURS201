@@ -4,7 +4,7 @@ description : Бие даалтын бодлого 16
 attachments :
   slides_link : https://s3.amazonaws.com/smt201-16/san3.pdf
 
---- type:NormalExercise lang:r xp:100 skills:1 key:0ed836297d
+--- type:NormalExercise lang:r xp:100 skills:1
 
 ## 16 Бодлого
 $p(k;n,p) = C_n^k p^k  q^{n-k}$ , n=10  биномт тархалтын **p** -параметрыг 
@@ -31,7 +31,7 @@ $p(k;n,p) = C_n^k p^k  q^{n-k}$ , n=10  биномт тархалтын **p** -�
 $M_1=\sum_{k=1}^{10} k \cdot C_{10}^{k}\cdot p^k \cdot q^{10-k}=10\cdot p$
 
 # **p** параметрын утгыг олвол,
-$10p=6.8 \rigtharrow p=0.68.$
+$10p=6.8 \Rigtharrow p=0.68.$
 
 ```
 
