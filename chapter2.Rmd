@@ -14,13 +14,12 @@ attachments :
 *** =instructions
 
 - Биномт тархалтын хувьд I эрэмбийн төвийн момент 
-- $ M_{1} = S_{k=1}^{10} k \cdot C_{10}^{k} \cdot$ $ p^k \cdot q^{10-k} = 10 \cdot p$  тул
+- $ M_{1}$ = ![equation](http://s3.amazonaws.com/smt201-16/render16_1) = $n \cdot p$  тул
 - $ 10 \cdot p = 6.8 \Rightarrow p=0.68 $ гэж параметр олдоно.
-- $ M_1 = \sum_{k=1}^{10} k \cdot C_{10}^{k} \cdot  p^k \cdot q^{10-k} = 10 \cdot p$
 
 *** =hint
 # Биномт тархалтын хувьд дараах томъёог ашигла.
-- $ M_1=\sum_{k=1}^{n} k \cdot C_{n}^{k}\cdot p^k \cdot q^{n-k}=n\cdot p $
+- $ M_{1}$ = ![equation](http://s3.amazonaws.com/smt201-16/render16_1) = $n \cdot p$
 
 *** =pre_exercise_code
 ```{r}
@@ -30,7 +29,7 @@ attachments :
 *** =sample_code
 ```{r}
 # Биномт тархалтын хувьд I эрэмбийн төвийн момент
-$M_1=\sum_{k=1}^{10} k \cdot C_{10}^{k}\cdot p^k \cdot q^{10-k}=10\cdot p$
+$ M_{1}$ = ![equation](http://s3.amazonaws.com/smt201-16/render16_1) = $n \cdot p$
 
 # **p** параметрын утгыг олвол,
 $10p=6.8 \Rigtharrow p=0.68.$
