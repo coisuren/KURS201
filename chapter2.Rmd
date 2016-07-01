@@ -117,8 +117,8 @@ Mxx <- mean(x**2)
 # коеффициентуудыг олвол,
 a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
 a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
-yl  <- a1x +a2$ гэж олдоно.
-plot(x,y,x,yl)
+y_lin  <- a1*x +a2 гэж олдоно.
+plot(x,y,x,y_lin)
 ```
 
 
@@ -135,8 +135,8 @@ Mxx <- mean(x**2)
 # коеффициентуудыг олвол,
 a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
 a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
-yl  <- a1x +a2$ гэж олдоно.
-plot(x,y,x,yl)
+y_lin  <- a1*x +a2 гэж олдоно.
+plot(x,y,x,y_lin)
 ```
 
 *** =sct
