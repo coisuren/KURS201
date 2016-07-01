@@ -64,3 +64,74 @@ p <- 6.8/10
 ```{r}
 #no SCT
 ```
+--- type:NormalExercise lang:r xp:100 skills:1
+
+## 17 Бодлого
+
+Түүврийг ашиглан $y = a_1$ x + $a_2$  с.х -ний параметрууд $a_1,a_2$ ийг хамгийн бага квадратын аргаар тодорхойл.
+
+Хамгийн их  квадратын аргаар $a_1,a_2$ коеффициентуудыг олохдоо
+- $a_1 = \frac{M(xy)-MxMy}{Mx^2-(Mx)^2}$
+- $a_2 = n \frac{Mx^2My - Mx M(xy)}{Mx^2-(Mx)^2}$
+- $ y = a_1x +a_2$ гэж олдоно.
+
+*** =instructions
+# `x`, `y` -ын дундаж
+- Mx <- mean(x)
+- My <- mean(y)
+-# `xy`, $x^2$ -ын дундаж
+- M(xy) <- mean(x*y)
+- M(xx) <- mean(x**2)
+
+# коеффициентуудыг олвол,
+- $a_1 = \frac{M(xy)-MxMy}{Mx^2-(Mx)^2}$
+- $a_2 = n \frac{Mx^2My - Mx M(xy)}{Mx^2-(Mx)^2}$
+- $ y = a_1x +a_2$ гэж олдоно.
+
+*** =hint
+# no hint
+
+*** =pre_exercise_code
+```{r}
+x <- c(-1, -0.75, -0.5, -0.25, 0.0, 0.25, 0.5, 0.75, 1.0)
+y <- c(2.08, 1.83, 1.57, 1.13, 0.89, 0.75, 0.30, 0.06, -0.01)
+n <- 9
+```
+
+*** =sample_code
+```{r}
+# x, y -ын дундаж
+Mx <- mean(x)
+My <- mean(y)
+# xy, $x^2$ -ын дундаж
+Mxy <- mean(x*y)
+Mxx <- mean(x**2)
+
+# коеффициентуудыг олвол,
+a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
+a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
+yl  <- a1x +a2$ гэж олдоно.
+plot(x,y,x,yl)
+```
+
+*** =solution
+
+```{r}
+# x, y -ын дундаж
+Mx <- mean(x)
+My <- mean(y)
+# xy, $x^2$ -ын дундаж
+Mxy <- mean(x*y)
+Mxx <- mean(x**2)
+
+# коеффициентуудыг олвол,
+a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
+a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
+yl  <- a1x +a2$ гэж олдоно.
+plot(x,y,x,yl)
+```
+
+*** =sct
+```{r}
+#no SCT
+```
