@@ -203,7 +203,10 @@ a <- mydata[2]
 ls()
 
 # Өгөгдлийн бүтцийг харах
-a;  head(a); a$V2; names(a)
+a
+head(a
+a$V
+names(a)
 
 # Дундажийг олох
 mean(a$V2)
@@ -215,7 +218,10 @@ mean(a$V2)
 ls()
 
 # Өгөгдлийн бүтцийг харах
-a;  head(a); a$V2; names(a)
+a
+head(a)
+a$V2
+names(a)
 
 # Дундажийг олох
 mean(a$V2)
@@ -252,7 +258,9 @@ a <- mydata[2]
 ls()
 
 # Өгөгдлийн бүтцийг харах
-a;  head(a); a$V2; names(a)
+ahead(a)
+a$V2
+names(a)
 
 #  Түүврийн дундаж квадрат хазайлтыг олох
 sd(a$V2)
@@ -268,7 +276,10 @@ D <- sd(a$V2)**2
 ls()
 
 # Өгөгдлийн бүтцийг харах
-a;  head(a); a$V2; names(a)
+a
+head(a)
+a$V2
+names(a)
 
 #  Түүврийн дундаж квадрат хазайлтыг олох
 sd(a$V2)
