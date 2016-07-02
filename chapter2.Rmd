@@ -4,7 +4,7 @@ description : Бие даалтын бодлого 16-20
 attachments :
   slides_link : https://s3.amazonaws.com/smt201-16/san3.pdf
 
---- type:NormalExercise lang:r xp:100 skills:1 key:0ed836297d
+--- type:NormalExercise lang:r xp:150 skills:1 key:0ed836297d
 
 ## Бодлого 16
 
@@ -67,7 +67,7 @@ p <- 6.8/10
 #no SCT
 
 
---- type:NormalExercise lang:r xp:100 skills:1 key:922de32376
+--- type:NormalExercise lang:r xp:150 skills:1 key:922de32376
 ## Бодлого 17
 
 Түүврийг ашиглан  **y = a1 x + a2**  с.х -ний параметрууд **a1,a2** ийг хамгийн бага квадратын аргаар тодорхойл.
@@ -148,7 +148,7 @@ lines(x,y_lin,col=3)
 *** =sct
 #no SCT
 
---- type:NormalExercise lang:r xp:100 skills:1 key:c984f046d9
+--- type:NormalExercise lang:r xp:150 skills:1 key:c984f046d9
 ## Бодлого 18
 
 $x1 ,\, x_2, \, x3$ санамсаргүй хэмжигдэхүүний үл хамаарсан хэмжилтүүд $\tilde{x}1=17,\, \tilde{x}2=81,\, \tilde{x}3=83$  өгөгдөв. Энэ хэмжилтийн алдаануудыг $ N[0, \sigma(k)], \, k =1,2,3$ стандарт нормаль тархалттай гэж үзээд с.х -ний утгыг сайжруул. Энд $x1 + x2 + x3 - 180 = 0 $ хамааралтай ба $ \sigma(i)=1, \quad i=1,2,3 $ байна.
@@ -224,7 +224,7 @@ lines(x,y_lin,col=3)
 *** =sct
 #no SCT
 
---- type:NormalExercise lang:r xp:100 skills:1 key:da3ca880f5
+--- type:NormalExercise lang:r xp:150 skills:1 key:da3ca880f5
 ## Бодлого 19
 
 $N(a,1)$ - нормаль тархалттай $\xi$ - с.х -ний $n=10$ ширхэг элементтэй түүврийн хувьд,
@@ -305,7 +305,7 @@ lines(x,y_lin,col=3)
 *** =sct
 #no SCT
 
---- type:NormalExercise lang:r xp:100 skills:1  key:39be7e1e33
+--- type:NormalExercise lang:r xp:200 skills:1  key:39be7e1e33
 ## Бодлого 20
 
 **Бодлого 17** -гийн өгөгдөл болон хамгийн бага квадратын аргаар олсон параметруудыг ашиглан $( yk - y_{lin})$ хэмжигдэхүүн $N(0,\sqrt{0.1})$ тархалттай болохыг **Уилкоксоны шинжүүрээр** шалга! Энд стандарт нормаль тархалттай загвар түүврээр **t=(t1, ..., t30)** - г хэрэглэнэ үү. 
