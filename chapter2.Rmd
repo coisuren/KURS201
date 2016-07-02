@@ -1,6 +1,6 @@
 ---
-title       : SMT201
-description : Бие даалтын бодлого 16
+title       : SMT201 дараах хэсэг.
+description : Бие даалтын бодлого 16-20
 attachments :
   slides_link : https://s3.amazonaws.com/smt201-16/san3.pdf
 
