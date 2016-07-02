@@ -1,5 +1,5 @@
 ---
-title       : SMT201 эхний хэсэг
+title       : SMT201, III хэсэг
 description : Бие даалтын бодлого 15.1 - 15.7
 attachments :
   slides_link : https://s3.amazonaws.com/smt201-16/san3.pdf
