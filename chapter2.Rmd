@@ -227,7 +227,7 @@ lines(x,y_lin,col=3)
 --- type:NormalExercise lang:r xp:100 skills:1  key:da3ca880f5
 ## Бодлого 19
 
-$N(0,1)$ - нормаль тархалттай с.х -ний $n=10$ ширхэг түүврийн хувьд,
+$N(a,1)$ - нормаль тархалттай **x** - с.х -ний $n=10$ ширхэг элементтэй түүврийн хувьд,
 
 ![equation](https://s3.amazonaws.com/smt201-16/render19_1.png) 
 
