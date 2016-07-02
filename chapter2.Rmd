@@ -226,7 +226,7 @@ lines(x,y_lin,col=3)
 *** =sct
 #no SCT
 
---- type:NormalExercise lang:r xp:100 skills:1 
+--- type:NormalExercise lang:r xp:100 skills:1  key:da3ca880f5
 ## Бодлого 19
 
 $N(0,1)$ - нормаль тархалттай с.х -ний $n=10$ ширхэг түүврийн хувьд,
