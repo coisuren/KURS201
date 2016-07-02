@@ -304,3 +304,79 @@ lines(x,y_lin,col=3)
 
 *** =sct
 #no SCT
+
+--- type:NormalExercise lang:r xp:100 skills:1 
+## Бодлого 20
+
+Бодлого 17 -гийн өгөгдөл дээр хамгийн бага квадратын аргаар олсон параметруудыг ашиглан $(yk-y)$ хэмжигдэхүүн $N(0,\sqrt{0.1})$ тархалттай болохыг Уилкоксоны шинжүүрээр шалга! Энд $t1, ..., t30$ загвар түүврээр **t** -г хэрэглэнэ үү.  
+
+*** =instructions
+
+$x, y$ -ын дундаж:
+
+- `Mx <- mean(x)`
+- `My <- mean(y)`
+
+$xy, x^2$ -ын дундаж:
+
+- `M(xy) <- mean(x*y)`
+- `M(xx) <- mean(x**2)`
+
+Коеффициентуудыг олвол:
+
+- $a1 = \frac{M(xy)-MxMy}{Mx^2-(Mx)^2}$
+- $a2 = n \frac{Mx^2My - Mx M(xy)}{Mx^2-(Mx)^2}$
+- $ y = a1x + a2$ гэж олдоно.
+
+*** =hint
+# no hint
+
+*** =pre_exercise_code
+```{r}
+x <- c(-1, -0.75, -0.5, -0.25, 0.0, 0.25, 0.5, 0.75, 1.0)
+y <- c(2.08, 1.83, 1.57, 1.13, 0.89, 0.75, 0.30, 0.06, -0.01)
+n <- 9
+```
+
+*** =sample_code
+```{r}
+# x, y -ын дундаж
+Mx <- mean(x)
+My <- mean(y)
+# xy, x^2 -ын дундаж
+Mxy <- mean(x*y)
+Mxx <- mean(x**2)
+
+# коеффициентуудыг олвол,
+a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
+a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
+
+# регрессын тэгшитгэлийг бодож зурвал,
+y_lin  <- a1*x + a2
+plot(x,y,type="l",col=2)
+lines(x,y_lin,col=3)
+```
+
+
+*** =solution
+
+```{r}
+# x, y -ын дундаж
+Mx <- mean(x)
+My <- mean(y)
+# xy, x*x -ын дундаж
+Mxy <- mean(x*y)
+Mxx <- mean(x**2)
+
+# коеффициентуудыг олвол,
+a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
+a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
+
+# регрессын тэгшитгэлийг бодож зурвал,
+y_lin  <- a1*x + a2
+plot(x,y,type="l",col=2)
+lines(x,y_lin,col=3)
+```
+
+*** =sct
+#no SCT
