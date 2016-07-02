@@ -109,18 +109,19 @@ n <- 9
 ```
 
 *** =sample_code
-*** =sample_code
 ```{r}
-# x, y` -ын дундаж
+# x, y -ын дундаж
 Mx <- mean(x)
 My <- mean(y)
-# xy, $x^2$ -ын дундаж
+# xy, x^2 -ын дундаж
 Mxy <- mean(x*y)
 Mxx <- mean(x**2)
 
 # коеффициентуудыг олвол,
 a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
 a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
+
+# регрессын тэгшитгэлийг бодож зурвал,
 y_lin  <- a1*x + a2
 plot(x,y,type="l",col=2)
 lines(x,y_lin,col=3)
@@ -130,16 +131,18 @@ lines(x,y_lin,col=3)
 *** =solution
 
 ```{r}
-# x, y` -ын дундаж
+# x, y -ын дундаж
 Mx <- mean(x)
 My <- mean(y)
-# xy, $x^2$ -ын дундаж
+# xy, x^2 -ын дундаж
 Mxy <- mean(x*y)
 Mxx <- mean(x**2)
 
 # коеффициентуудыг олвол,
 a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
 a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
+
+# регрессын тэгшитгэлийг бодож зурвал,
 y_lin  <- a1*x + a2
 plot(x,y,type="l",col=2)
 lines(x,y_lin,col=3)
