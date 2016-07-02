@@ -225,3 +225,83 @@ lines(x,y_lin,col=3)
 
 *** =sct
 #no SCT
+
+--- type:NormalExercise lang:r xp:100 skills:1 
+## Бодлого 19
+
+$N(0,1)$ - нормаль тархалттай с.х -ний $n=10$ ширхэг түүврийн хувьд,
+\\[ \sum_1^n x_k =2.35 \\]
+\\[ f(x_1,...,x_n)=\left( \frac{x_1+ ... + x_n}{n} - a\right) \qquad (1)\\]
+(1) нь $N(0,1)$ - стандарт нормаль тархалттай байдаг байв. Тэгээд **а** - параметрын $p=0.95$ түвшний итгэх завсрыг ол.
+
+
+*** =instructions
+
+$x, y$ -ын дундаж:
+
+- `Mx <- mean(x)`
+- `My <- mean(y)`
+
+$xy, x^2$ -ын дундаж:
+
+- `M(xy) <- mean(x*y)`
+- `M(xx) <- mean(x**2)`
+
+Коеффициентуудыг олвол:
+
+- $a1 = \frac{M(xy)-MxMy}{Mx^2-(Mx)^2}$
+- $a2 = n \frac{Mx^2My - Mx M(xy)}{Mx^2-(Mx)^2}$
+- $ y = a1x + a2$ гэж олдоно.
+
+*** =hint
+# no hint
+
+*** =pre_exercise_code
+```{r}
+x <- c(-1, -0.75, -0.5, -0.25, 0.0, 0.25, 0.5, 0.75, 1.0)
+y <- c(2.08, 1.83, 1.57, 1.13, 0.89, 0.75, 0.30, 0.06, -0.01)
+n <- 9
+```
+
+*** =sample_code
+```{r}
+# x, y -ын дундаж
+Mx <- mean(x)
+My <- mean(y)
+# xy, x^2 -ын дундаж
+Mxy <- mean(x*y)
+Mxx <- mean(x**2)
+
+# коеффициентуудыг олвол,
+a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
+a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
+
+# регрессын тэгшитгэлийг бодож зурвал,
+y_lin  <- a1*x + a2
+plot(x,y,type="l",col=2)
+lines(x,y_lin,col=3)
+```
+
+
+*** =solution
+
+```{r}
+# x, y -ын дундаж
+Mx <- mean(x)
+My <- mean(y)
+# xy, x*x -ын дундаж
+Mxy <- mean(x*y)
+Mxx <- mean(x**2)
+
+# коеффициентуудыг олвол,
+a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
+a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx -Mx**2)
+
+# регрессын тэгшитгэлийг бодож зурвал,
+y_lin  <- a1*x + a2
+plot(x,y,type="l",col=2)
+lines(x,y_lin,col=3)
+```
+
+*** =sct
+#no SCT
