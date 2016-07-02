@@ -68,7 +68,7 @@ p <- 6.8/10
 ```{r}
 #no SCT
 ```
---- type:NormalExercise lang:r xp:100 skills:1 key:922de32376
+--- type:NormalExercise lang:r xp:100 skills:1
 
 ## 17 Бодлого
 
@@ -134,7 +134,7 @@ lines(x,y_lin,col=3)
 # x, y -ын дундаж
 Mx <- mean(x)
 My <- mean(y)
-# xy, x^2 -ын дундаж
+# xy, x*x -ын дундаж
 Mxy <- mean(x*y)
 Mxx <- mean(x**2)
 
