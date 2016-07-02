@@ -5,7 +5,7 @@ attachments :
   slides_link : https://s3.amazonaws.com/smt201-16/san3.pdf
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:0f9f5045dd
-## 15.1 Бодлого
+## Бодлого 15.1
 
 $a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a** түүврийн хувьд абсалют давтамжаар нь **m=10** хэсэг ангилсан статистикийн цувааны **ХИУ, ХБУ, алхамыг** ол.
 
@@ -72,7 +72,7 @@ h <- (amax -amin)/m
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1  key:1d1f57700e
-## 15.2 Бодлого
+## Бодлого 15.2
 
 $a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a** түүврийн хувьд абсалют давтамжаар нь **m=10** хэсэг ангилсан статистикийн цувааны **баруун** үзүүр, **төвийн** цэгүүдийг ол.
 
@@ -122,7 +122,7 @@ xc <- xr - h/2
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:30513e4c08
-## 15.3 Бодлого
+## Бодлого 15.3
 
 $a_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a** түүврийн хувьд абсалют давтамжаар нь **m=10** хэсэг ангилсан статистикийн цувааны **давтамжийг** олж, цувааг зохио.
 
@@ -174,7 +174,7 @@ sseries <- cbind(xc,frq)
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:059dfa711a
-## 15.4 Бодлого
+## Бодлого 15.4
 
 Өмнө ангилсан статистик цувааны **полигоныг** байгуул.
 
@@ -225,7 +225,7 @@ plot(xc,frq,"s")
 # no code
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:a6e85e5aed
-## 15.5 Бодлого
+## Бодлого 15.5
 
 Өмнө ангилсан статистик цувааны `rfrq` - харьцангуй давтамжийн **гистограмыг** байгуул.
 
@@ -276,7 +276,7 @@ plot(xc,rfrq,"s")
 # no code
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:428cbe4146
-## 15.6 Бодлого
+## Бодлого 15.6
 
 **a** - түүврийн **дундажийг** ол.
 
@@ -329,7 +329,7 @@ mean(a$V2)
 # no code
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2a5a356bd8
-## 15.7 Бодлого
+## Бодлого 15.7
 
 **a** - түүврийн $\sigma$ - **дундаж квадрат хазайлт** , $D = \sigma^2$ - **дисперсийг** тус тус ол.
 
