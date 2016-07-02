@@ -6,7 +6,7 @@ attachments :
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:0ed836297d
 
-## 16 Бодлого
+## Бодлого 16
 
 ![equation](https://s3.amazonaws.com/smt201-16/render16_1.png),   n=10  биномт тархалтын **p** -параметрыг 
 туршилтын момент $ M_1 = \overline{x} $ = 6.8  -ээр моментын арга хэрэглэн ол.
@@ -68,7 +68,7 @@ p <- 6.8/10
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:922de32376
-## 17 Бодлого
+## Бодлого 17
 
 Түүврийг ашиглан  **y = a1 x + a2**  с.х -ний параметрууд **a1,a2** ийг хамгийн бага квадратын аргаар тодорхойл.
 
