@@ -14,7 +14,7 @@ $P(k;n,p) = C\_n^k \cdot p^k \cdot q^{n-k}, \qquad n=10 \,$  биномт тар
 *** =instructions
 
 - Биномт тархалтын хувьд **I** эрэмбийн анхны момент 
-- ![equation](https://s3.amazonaws.com/smt201-16/render16-2.png) тул
+- $M\_1^* = \sum\_{k=1}^n k \cdot C\_n^k \cdot p_k \cdot q^{n-k} = n\cdot p $ тул
 - $ 10 \cdot p = 6.8 \Rightarrow p=0.68 $ гэж параметр олдоно.
 
 *** =hint
