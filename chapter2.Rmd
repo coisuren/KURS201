@@ -148,6 +148,96 @@ lines(x,y_lin,col=3)
 *** =sct
 #no SCT
 
+--- type:NormalExercise lang:r xp:150 skills:1
+## Бодлого 17B
+
+$y = a\_1x^2+a\_2x+a\_3$ тэгшитгэлийн $a\_1,\, a\_2, \,a\_3$ параметруудыг  **x** ба **y** түүврийн утгуудыг ашиглан хамгийн бага квадратын аргаар тодорхойл. 
+
+Хамгийн бага  квадратын аргаар $a\_1,\, a\_2, \, a\_3$ коеффициентуудыг олохдоо:
+
+$$ \left\{
+  \begin{array}{llll}
+  a\_1 M(x^4) &+& a\_2 M(x^3) &+& a\_3 M(x^2) &=& M(y \cdot x^2) \\
+  a\_1 M(x^3) &+& a\_2 M(x^2) &+& a\_3 M(x) &=& M(y \cdot x) \\
+  a\_1 M(x^2) &+& a\_2 M(x) &+& a\_3  &=& M(y) \\
+  \end{array}
+\right. $$
+
+
+- $ a1 = \frac{M(xy)-MxMy}{Mx^2-(Mx)^2}$
+- $ a2 = n \frac{Mx^2My - Mx M(xy)}{Mx^2-(Mx)^2}$
+- $ y = a1 \cdot x + a2$ гэж олдоно.
+
+*** =instructions
+$x, y$ -ын дундаж:
+
+- `Mx <- mean(x)`
+- `My <- mean(y)`
+
+$xy, x^2$ -ын дундаж:
+
+- `M(xy) <- mean(x*y)`
+- `M(xx) <- mean(x**2)`
+
+Коеффициентуудыг олвол:
+
+- $a1 = \frac{M(xy)-MxMy}{Mx^2-(Mx)^2}$
+- $a2 = n \frac{Mx^2My - Mx M(xy)}{Mx^2-(Mx)^2}$
+- $ y = a1x + a2$ гэж олдоно.
+
+*** =hint
+# no hint
+
+*** =pre_exercise_code
+```{r}
+x <- c(-1, -0.75, -0.5, -0.25, 0.0, 0.25, 0.5, 0.75, 1.0)
+y <- c(2.08, 1.83, 1.57, 1.13, 0.89, 0.75, 0.30, 0.06, -0.01)
+n <- 9
+```
+
+*** =sample_code
+```{r}
+# x, y -ын дундаж
+Mx <- mean(x)
+My <- mean(y)
+# xy, x*x -ын дундаж
+Mxy <- mean(x*y)
+Mxx <- mean(x**2)
+
+# коеффициентуудыг олвол,
+a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
+a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx - Mx**2)
+
+# регрессын тэгшитгэлийг бодож зурвал,
+y_lin  <- a1*x + a2
+plot(x,y,type="l",col=2)
+lines(x,y_lin,col=3)
+```
+
+
+*** =solution
+
+```{r}
+# x, y -ын дундаж
+Mx <- mean(x)
+My <- mean(y)
+# xy, x*x -ын дундаж
+Mxy <- mean(x*y)
+Mxx <- mean(x**2)
+
+# коеффициентуудыг олвол,
+a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
+a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx - Mx**2)
+
+# регрессын тэгшитгэлийг бодож зурвал,
+y_lin  <- a1*x + a2
+plot(x,y,type="l",col=2)
+lines(x,y_lin,col=3)
+```
+
+*** =sct
+#no SCT
+
 --- type:NormalExercise lang:r xp:150 skills:1 key:c984f046d9
 ## Бодлого 18
 
