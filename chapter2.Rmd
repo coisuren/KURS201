@@ -177,11 +177,11 @@ $xy, x^2$ -ын дундаж:
 $x^3, yx^2$ -ын дундаж:
 
 - `Mx3 <- mean(x^3)`
-- `Myx2 <- mean(y*x^2)`
+- `Myx2 <- mean(y*x**2)`
 
 $x^4$ -ын дундаж:
 
-- `Mx4 <- mean(x^4)`
+- `Mx4 <- mean(x**4)`
 
 Системийг бодох
 
@@ -236,19 +236,30 @@ lines(x,y_lin,col=3)
 *** =solution
 
 ```{r}
-# x, y -ын дундаж
+# I эрэмбийн төвийн моментууд,
 Mx <- mean(x)
 My <- mean(y)
-# xy, x*x -ын дундаж
-Mxy <- mean(x*y)
-Mxx <- mean(x**2)
 
-# коеффициентуудыг олвол,
-a1 <- (Mxy - Mx*My)/(Mxx - Mx**2)
-a2 <- n*(Mx**2*My - Mx*Mxy)/(Mxx - Mx**2)
+# II эрэмбийн төвийн моментууд,
+Mxy <- mean(x*y)
+Mx2 <- mean(x**2)
+
+# III эрэмбийн төвийн моментууд,
+Mx3 <- mean(x**3)
+Myx2 <- mean(y*x**2)
+
+# IV эрэмбийн төвийн моментууд,
+Mx4 <- mean(x**4)
+
+# Системийг олвол, 
+` A <- matrix(c(Mx4, Mx3, Mx2, Mx3, Mx2, Mx, Mx2, Mx, 1), nrow = 3, ncol = 3, byrow = TRUE)`
+` b <- matrix(C(Myx2,Mxy,My), byrow = TRUE)`
+
+# **a** коеффициентуудыг олвол,
+a <- solve(A,b)
 
 # регрессын тэгшитгэлийг бодож зурвал,
-y_lin  <- a1*x + a2
+y_lin  <- a[1]*x**2 + a[2]*x + a[3]
 plot(x,y,type="l",col=2)
 lines(x,y_lin,col=3)
 ```
