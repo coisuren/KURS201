@@ -148,7 +148,7 @@ lines(x,y_lin,col=3)
 *** =sct
 #no SCT
 
---- type:NormalExercise lang:r xp:150 skills:1
+--- type:NormalExercise lang:r xp:150 skills:1 key:c37ce80908
 ## Бодлого 17B
 
 $y = a\_1x^2+a\_2x+a\_3$ тэгшитгэлийн $a\_1,\, a\_2, \,a\_3$ параметруудыг  **x** ба **y** түүврийн утгуудыг ашиглан хамгийн бага квадратын аргаар тодорхойл. 
