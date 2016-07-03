@@ -185,7 +185,7 @@ $x^4$ -ын дундаж:
 
 Системийг бодох
 
-` A <- matrix(c(Mx4, Mx3, Mx2, Mx3, Mx2, Mx, Mx2, Mx, 1), nrow = 3, ncol = 3, byrow = TRUE)`
+` A <- matrix(c(Mx4, Mx3, Mx2, Mx3, Mx2, Mx, Mx2, Mx, 1), nrow = 3)`
 ` b <- matrix(C(Myx2,Mxy,My), byrow = TRUE)`
 
 Коеффициентуудыг олвол:
@@ -220,8 +220,8 @@ Myx2 <- mean(y*x**2)
 Mx4 <- mean(x**4)
 
 # Системийг олвол, 
-` A <- matrix(c(Mx4, Mx3, Mx2, Mx3, Mx2, Mx, Mx2, Mx, 1), nrow = 3, ncol = 3, byrow = TRUE)`
-` b <- matrix(C(Myx2,Mxy,My), byrow = TRUE)`
+A <- matrix(c(Mx4, Mx3, Mx2, Mx3, Mx2, Mx, Mx2, Mx, 1), nrow = 3)
+b <- matrix(C(Myx2,Mxy,My), byrow = TRUE)
 
 # **a** коеффициентуудыг олвол,
 a <- solve(A,b)
