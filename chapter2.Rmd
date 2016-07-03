@@ -176,7 +176,7 @@ $xy, x^2$ -ын дундаж:
 
 $x^3, yx^2$ -ын дундаж:
 
-`Mx3 <- mean(x^3)`
+`Mx3 <- mean(x**3)`
 `Myx2 <- mean(y*x**2)`
 
 $x^4$ -ын дундаж:
@@ -234,9 +234,7 @@ plot(x,y,type="l",col=2)
 lines(x,y_lin,col=3)
 ```
 
-
 *** =solution
-
 ```{r}
 # I эрэмбийн төвийн моментууд,
 Mx <- mean(x)
