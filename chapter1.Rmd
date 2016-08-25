@@ -278,7 +278,9 @@ plot(xc,rfrq,"s")
 ```
 
 *** =sct
-# no code
+```{r}
+#no SCT
+```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:428cbe4146
 ## Бодлого 15.6
