@@ -12,20 +12,20 @@ $a\_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a*
 *** =instructions
 - Өгөгдлийн нэрийг дуудаж үзэх:
 - `ls()`, `mydata`, 
-- Хэсэгчилэн үзэх: эхний болон сүүлчийн 6 элемент болон хэмжээс
+- Хэсэгчилэн үзэх: эхний болон сүүлчийн 6 элемент, хэмжээс
 - `head(mydata)`, 
 - `tail(mydata)`, 
-- `dim(mydata)`
+- `dim(mydata)`,
 - Анхны утга олгох:
 - `a <- mydata[2]`, 
-- `m <- 10`
+- `m <- 10`,
 - ХИУ, ХБУ, алхамыг бодох:
 - `amin <- min(a)`, 
-- `h <- (amax -amin)/m`
+- `h <- (amax -amin)/m`,
 
 *** =hint
 
-#`for(i in 1:200) { frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] + 1 }`
+`for(i in 1:200) { frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] + 1 }`
 
 *** =pre_exercise_code
 ```{r}
