@@ -70,9 +70,7 @@ h <- (amax -amin)/m
 ```
 
 *** =sct
-```{r}
-#no SCT
-```
+# no SCT
 
 --- type:NormalExercise lang:r xp:150 skills:1  key:1d1f57700e
 ## Бодлого 15.2
