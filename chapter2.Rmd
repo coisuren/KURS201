@@ -64,7 +64,9 @@ p <- 6.8/10
 ```
 
 *** =sct
+```{r}
 #no SCT
+```
 
 
 --- type:NormalExercise lang:r xp:150 skills:1 key:922de32376
