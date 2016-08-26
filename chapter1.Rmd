@@ -333,7 +333,9 @@ mean(a$V2)
 ```
 
 *** =sct
-# no code
+```{r}
+#no SCT
+```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2a5a356bd8
 ## Бодлого 15.7
@@ -395,4 +397,6 @@ D <- sd(a$V2)**2
 ```
 
 *** =sct
-# no code
+```{r}
+#no SCT
+```
