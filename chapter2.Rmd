@@ -148,7 +148,9 @@ lines(x,y_lin,col=3)
 ```
 
 *** =sct
+```{r}
 #no SCT
+```
 
 --- type:NormalExercise lang:r xp:150 skills:1 key:c37ce80908
 ## Бодлого 17B
@@ -268,7 +270,9 @@ lines(x,y_lin,col=3)
 ```
 
 *** =sct
+```{r}
 #no SCT
+```
 
 --- type:NormalExercise lang:r xp:150 skills:1 key:c984f046d9
 ## Бодлого 18
@@ -345,7 +349,9 @@ lines(x,y_lin,col=3)
 ```
 
 *** =sct
+```{r}
 #no SCT
+```
 
 --- type:NormalExercise lang:r xp:150 skills:1 key:da3ca880f5
 ## Бодлого 19
@@ -427,7 +433,9 @@ lines(x,y_lin,col=3)
 ```
 
 *** =sct
+```{r}
 #no SCT
+```
 
 --- type:NormalExercise lang:r xp:200 skills:1  key:39be7e1e33
 ## Бодлого 20
@@ -525,4 +533,6 @@ lines(x,y_lin,col=3)
 ```
 
 *** =sct
+```{r}
 #no SCT
+```
