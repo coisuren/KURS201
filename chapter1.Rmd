@@ -21,6 +21,10 @@ $a\_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a*
 `dim(mydata)`, `names(mydata)`,
 `mydata$V1`, `mydata$V1[6]`
 
+- Матриц үүсгэж, үйлдэл хийх
+`c(1,2,3,4,5,"А"), c(1:6,"А")`
+`2*c(1:5,"A") + c(7:11,"B")` г.м
+
 - Багананд шинэ нэр олгох: `colnames(mydata) <- c("V1","b")`
 
 - Шинэ хувьсагчид утга олгох: `c <- mydata[2]`, `a <- mydata$b`, `m <- 10`
