@@ -186,6 +186,7 @@ for(i in 1:m){ frq[round(a[i,1]/h),1] <- frq[round(a[i,1]/h),1] +1 }
 # Статистик цувааг зохиох,
 sseries <- cbind(xc,frq)
 ```
+
 *** =sct
 ```{r}
 #no SCT
