@@ -185,6 +185,7 @@ sseries <- cbind(xc,frq)
 ```
  
 *** =solution
+
 ```  
 # Давтамжийн эхний утгыг бодох,
 frq <- matrix(0,m,1); frq[1,1] <- 1
