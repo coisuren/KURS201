@@ -58,13 +58,13 @@ tail(mydata)
 dim(mydata)
 
 # Анхны утга олгож гүйцээх,
-m <- 
-a <- mydata
+m <- 10
+
 
 # ХБУ, ХИУ, алхамыг бодох,
-amin <- min( )
-amax <- max( )
-h <- (amax -amin)/ 
+amin <- min(a)
+
+ 
 ```
 
 *** =solution
