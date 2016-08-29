@@ -22,8 +22,8 @@ $a\_k = frac(\sqrt 2 \cdot k), \quad k=\overline{1,200}$ гишүүнтэй **a*
 `mydata$V1`, `mydata$V1[6]`
 
 - Матриц үүсгэж, үйлдэл хийх
-`c(1,2,3,4,5,"А"), c(1:6,"А")`
-`2*c(1:5,"A") + c(7:11,"B")` г.м
+`c(1,2,3,4,5), c(1:6)`
+`2*c(1:5) + c(7:11)`  г.м
 
 - Багананд шинэ нэр олгох: `colnames(mydata) <- c("V1","b")`
 
@@ -57,13 +57,14 @@ head(mydata)
 tail(mydata) 
 dim(mydata)
 
-# Анхны утга олгох,
-a <- mydata[2]; m <- 10
+# Анхны утга олгож гүйцээх,
+m <- 
+a <- mydata
 
 # ХБУ, ХИУ, алхамыг бодох,
-amin <- min(a)
-amax <- max(a)
-h <- (amax -amin)/m
+amin <- min( )
+amax <- max( )
+h <- (amax -amin)/ 
 ```
 
 *** =solution
@@ -74,8 +75,9 @@ head(mydata)
 tail(mydata) 
 dim(mydata)
 
-# Анхны утга олгох,
-a <- mydata[2]; m <- 10
+# Анхны утга олгож гүйцээх,
+m <- 10 
+a <- mydata[2]
 
 # ХБУ, ХИУ, алхамыг бодох,
 amin <- min(a)
