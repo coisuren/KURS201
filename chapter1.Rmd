@@ -64,7 +64,7 @@ m <- 10
 # ХБУ, ХИУ, алхамыг бодох,
 amin <- min(a)
 
- 
+h <- (amax -amin)/m
 ```
 
 *** =solution
@@ -87,7 +87,16 @@ h <- (amax -amin)/m
 
 *** =sct
 ```{r}
-#no SCT
+test_student_typed(c("a <- mydata[2]",
+                     "a <- mydata$V2",
+                     "a <- mydata$b"),
+                   not_typed_msg = "Have you correctly coded the SQL query?")
+success_msg("Great job1!")
+test_function("max", args = "x")
+    test_object("amax")
+    test_output_contains("amax")
+    test_error()
+    success_msg("Great job2!")
 ```
 
 --- type:NormalExercise lang:r xp:150 skills:1  key:1d1f57700e
